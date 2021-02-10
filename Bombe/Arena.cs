@@ -45,7 +45,7 @@ namespace Bombe
 
             int buffer = 5;
             
-            // Position of cannon
+            // Position of cannon ###
 
             int cannonOnePositionX = GroundWidthPosition[1] + buffer;
             int cannonOnePositionY = TextBoxHeight - 2; //GroundHeightPosition[1];
