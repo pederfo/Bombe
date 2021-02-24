@@ -23,7 +23,7 @@ namespace Bombe
         public int Life { get; set; }
         public bool IsWinner { get; set; }
 
-
+        // This is the true master of the game.
         public Arena()
         {
             BorderWidth = Console.WindowWidth - 2;
