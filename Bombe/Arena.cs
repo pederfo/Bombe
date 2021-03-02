@@ -23,6 +23,8 @@ namespace Bombe
         public int Life { get; set; }
         public bool IsWinner { get; set; }
 
+        //Arena
+
 
         public Arena()
         {
@@ -61,8 +63,10 @@ namespace Bombe
 
             Target target = new Target(targetPositionX, targetPositionY, BorderWidth);
             //target.DrawTarget();
-            target.DrawATATtarget();
-            
+            //target.DrawATATtarget();
+            target.DrawTargetTank();
+
+
 
             Console.SetCursorPosition(3, TextBoxHeight + 1);           // Set position of text
             Console.WriteLine("Press SPACE to shoot");
@@ -104,7 +108,8 @@ namespace Bombe
                 isEnemyDead = false;
                 PlayerTurn = true;
                 //DrawGround();
-                target.ATATMovement();
+                //target.ATATMovement();
+                target.TankMovement();
 
                 while (PlayerTurn)
                 {
@@ -150,9 +155,12 @@ namespace Bombe
                     ClearText();
                     Console.SetCursorPosition(3, TextBoxHeight + 1);
                     Console.WriteLine("Enemy turn ");
-                    target.ATATMovement();
+                    //target.ATATMovement();
+                    target.TankMovement();
                     Bullet bullet = new Bullet(cannonOnePositionX, cannonOnePositionY, BorderWidth, BorderHeight, target.Xposition, target.Yposition, TextBoxHeight, target);
-                    bullet.DrawATATmissile();
+                    //bullet.DrawATATmissile();
+                    //bullet.DrawBullet();
+                    bullet.DrawBulletEnemy();
                     Console.SetCursorPosition(3, TextBoxHeight + 3);
                     Console.WriteLine($"Charge: {bullet.Charge}");
 
