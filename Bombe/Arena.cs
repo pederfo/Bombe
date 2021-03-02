@@ -23,6 +23,7 @@ namespace Bombe
         public int Life { get; set; }
         public bool IsWinner { get; set; }
 
+        // This is the true master of the game.
         //Arena
 
 
