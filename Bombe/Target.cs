@@ -22,7 +22,7 @@ namespace Bombe
         //   @
         // -(_)-
         //  / \
-
+        #region Infantry
         public void DrawTarget()
         {
             Console.SetCursorPosition(Xposition, Yposition);
@@ -42,6 +42,8 @@ namespace Bombe
             Console.SetCursorPosition(Xposition + 1, Yposition - 2);
             Console.WriteLine("@");
         }
+        #endregion
+
 
         //      ___
         // >===(___)

@@ -23,6 +23,7 @@ namespace Bombe
         //(___)===<
         // / \
 
+        #region Cannon One
         public void DrawCannonOne()
         {
 
@@ -58,13 +59,15 @@ namespace Bombe
             Console.WriteLine("_");
 
         }
+        #endregion
+
 
         //  Artillery
         //      //
         //    _//_
         //  _(____)_
         // (:: :: ::)
-
+        #region Artillery
         public void DrawArtillery()
         {
             Console.SetCursorPosition(Xposition, Yposition);
@@ -115,6 +118,8 @@ namespace Bombe
             Console.SetCursorPosition(Xposition + 6, Yposition - 3);
             Console.WriteLine("/");
         }
+        #endregion
+
     }
 
 
